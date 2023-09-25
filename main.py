@@ -8,3 +8,4 @@ model = GPT2LMHeadModel.from_pretrained('gpt2-large', pad_token_id=tokenizer.eos
 sentence = "I like ice cream"
 input_ids = tokenizer.encode(sentence, return_tensors="pt")
 print(input_ids)
+print(tokenizer.decode(input_ids[0][2]))
